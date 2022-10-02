@@ -6,6 +6,7 @@
   --color-hero-section--: #2f303a;
   --white-color--: #ffffff;
   --footer-bg-color--: #2f303a;
+  --header-border-color--: #ececec;
 }
 
 body {
@@ -31,6 +32,8 @@ body {
 /* лого сайта */
 
 .page-header {
+  border-bottom: var(--header-border-color--);
+  border: 1px solid #ececec;
 }
 
 .site-nav {
@@ -109,6 +112,7 @@ body {
   text-align: center;
   height: 600px;
   padding-top: 200px;
+  padding-bottom: 200px;
   margin-bottom: 94px;
 }
 
@@ -149,7 +153,7 @@ body {
 .section-title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.16;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color--);
@@ -179,7 +183,7 @@ body {
 .benefits-list .title {
   font-weight: 700;
   font-size: 14px;
-  line-height: 1;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-text-color--);
@@ -189,7 +193,7 @@ body {
 
 .benefits-list .descr {
   font-size: 14px;
-  line-height: 1.14;
+  line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color--);
   margin-bottom: 0;
@@ -200,6 +204,9 @@ body {
 .about {
   margin-bottom: 94px;
 }
+.about .section-title {
+  margin-bottom: 50px;
+}
 
 .about-list {
   display: flex;
@@ -209,22 +216,19 @@ body {
 /* Команда */
 
 .team {
+  padding-top: 94px;
+  padding-bottom: 94px;
   background: #f5f4fa;
+}
+
+.team .section-title {
+  padding-bottom: 50px;
+  margin-bottom: 0;
 }
 
 .team-list {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 94px;
-}
-.team-list-item {
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-}
-
-.team .section-title {
-  padding-top: 94px;
 }
 
 .team .title {
@@ -235,7 +239,8 @@ body {
   letter-spacing: 0.03em;
   color: var(--primary-text-color--);
   margin-top: 0;
-  padding-top: 30px;
+  margin-bottom: 0;
+  padding-bottom: 10px;
 }
 
 .team .descr {
@@ -251,13 +256,21 @@ body {
 
 .team-card {
   background-color: var(--white-color--);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-img {
+  margin-bottom: 30px;
 }
 
 /* Подвал сайта */
 
 .footer {
   background-color: var(--footer-bg-color--);
-  height: 252px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer-logo {
@@ -268,7 +281,6 @@ body {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  padding-top: 50px;
   display: inline-block;
   margin-bottom: 20px;
 }
@@ -283,6 +295,8 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  margin-top: 9px;
+  display: inline-block;
 }
 
 .footer .link-address {
@@ -331,8 +345,13 @@ body {
   padding: 6px 22px;
 }
 
-.button-filter:hover {
+.button-filter:hover,
+.button-filter:focus {
+  color: var(--white-color--);
   background-color: var(--accent-color--);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 
 /* Card-list */
