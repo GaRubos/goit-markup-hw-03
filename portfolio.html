@@ -20,34 +20,35 @@
 
   <body>
     <!-- Шапка сайта -->
+
     <header class="page-header">
-      <nav class="site-nav container">
-        <!-- Логотип -->
-        <a href="./index.html" class="site-nav-logo"
-          >Web<span class="site-nav-logo-studio">Studio</span></a
-        >
-
-        <!-- Навигация сайта-->
-        <ul class="site-nav-list list">
-          <li class="site-nav-item">
-            <a href="./index.html" class="link">Студія</a>
-          </li>
-          <li class="site-nav-item">
-            <a href="./portfolio.html" class="link current">Портфоліо</a>
-          </li>
-          <li class="site-nav-item"><a href="/" class="link">Контакти</a></li>
-        </ul>
-
+      <div class="container">
+        <nav class="site-nav">
+          <!-- Логотип -->
+          <a href="./index.html" class="site-nav-logo"
+            >Web<span class="site-nav-logo-studio">Studio</span></a
+          >
+          <!-- Навигация сайта-->
+          <ul class="site-nav-list list">
+            <li class="site-nav-item">
+              <a href="./index.html" class="link">Студія</a>
+            </li>
+            <li class="site-nav-item">
+              <a href="./portfolio.html" class="link current">Портфоліо</a>
+            </li>
+            <li class="site-nav-item"><a href="/" class="link">Контакти</a></li>
+          </ul>
+        </nav>
         <!-- Контакты -->
         <ul class="contact-list list">
           <li class="contact-list-item">
             <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
           </li>
           <li class="contact-list-item">
-            <a href="tel:+380961111111" class="link">+380961111111</a>
+            <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
           </li>
         </ul>
-      </nav>
+      </div>
     </header>
 
     <main>
@@ -55,130 +56,136 @@
         <div class="container">
           <h1 class="visually-hidden">Портфоліо</h1>
           <ul class="button-list">
-            <li><button type="button" class="button-filter">Усі</button></li>
-            <li><button type="button" class="button-filter">Веб-сайти</button></li>
-            <li><button type="button" class="button-filter">Додатки</button></li>
-            <li><button type="button" class="button-filter">Дизайн</button></li>
-            <li><button type="button" class="button-filter">Маркетинг</button></li>
+            <li class="button-item"><button type="button" class="button-filter">Усі</button></li>
+            <li class="button-item">
+              <button type="button" class="button-filter">Веб-сайти</button>
+            </li>
+            <li class="button-item">
+              <button type="button" class="button-filter">Додатки</button>
+            </li>
+            <li class="button-item"><button type="button" class="button-filter">Дизайн</button></li>
+            <li class="button-item">
+              <button type="button" class="button-filter">Маркетинг</button>
+            </li>
           </ul>
 
           <ul class="card-list">
             <li class="card-item list">
-              <div class="portfolio-card">
-                <a href="/" target="_blank" rel="noopener nofollow" class="link">
-                  <img
-                    src="./images/portfolio-page/site.jpg"
-                    width="370"
-                    alt="Дісплей компьютера на якому відображаються фото 3 людей"
-                  />
+              <a href="/" target="_blank" rel="noopener nofollow" class="link">
+                <img
+                  src="./images/portfolio-page/site.jpg"
+                  width="370"
+                  alt="Дісплей компьютера на якому відображаються фото 3 людей"
+                />
+                <div class="card-text">
                   <h2 class="card-title">Технокряк</h2>
                   <p class="card-descr">Веб-сайт</p>
-                </a>
-              </div>
+                </div>
+              </a>
             </li>
             <li class="card-item list">
-              <div class="portfolio-card">
-                <a href="/" target="_blank" rel="noopener nofollow" class="link">
-                  <img
-                    src="./images/portfolio-page/design-neworlean.jpg"
-                    width="370"
-                    alt="Баскетболіст з м'ячем"
-                  />
+              <a href="/" target="_blank" rel="noopener nofollow" class="link">
+                <img
+                  src="./images/portfolio-page/design-neworlean.jpg"
+                  width="370"
+                  alt="Баскетболіст з м'ячем"
+                />
+                <div class="card-text">
                   <h2 class="card-title">Постер New Orlean vs Golden Star</h2>
                   <p class="card-descr">Дизайн</p>
-                </a>
-              </div>
+                </div>
+              </a>
             </li>
             <li class="card-item list">
-              <div class="portfolio-card">
-                <a href="/" target="_blank" rel="noopener nofollow" class="link">
-                  <img
-                    src="./images/portfolio-page/apps-seafood.jpg"
-                    width="370"
-                    alt="Рибний ресторан"
-                  />
+              <a href="/" target="_blank" rel="noopener nofollow" class="link">
+                <img
+                  src="./images/portfolio-page/apps-seafood.jpg"
+                  width="370"
+                  alt="Рибний ресторан"
+                />
+                <div class="card-text">
                   <h2 class="card-title">Ресторан Seafood</h2>
                   <p class="card-descr">Додаток</p>
-                </a>
-              </div>
+                </div>
+              </a>
             </li>
             <li class="card-item list">
-              <div class="portfolio-card">
-                <a href="/" target="_blank" rel="noopener nofollow" class="link">
-                  <img
-                    src="./images/portfolio-page/marketing-prime.jpg"
-                    width="370"
-                    alt="музичні навушники"
-                  />
+              <a href="/" target="_blank" rel="noopener nofollow" class="link">
+                <img
+                  src="./images/portfolio-page/marketing-prime.jpg"
+                  width="370"
+                  alt="музичні навушники"
+                />
+                <div class="card-text">
                   <h2 class="card-title">Проєкт Prime</h2>
                   <p class="card-descr">Маркетинг</p>
-                </a>
-              </div>
+                </div>
+              </a>
             </li>
             <li class="card-item list">
-              <div class="portfolio-card">
-                <a href="/" target="_blank" rel="noopener nofollow" class="link">
-                  <img
-                    src="./images/portfolio-page/apps-boxes.jpg"
-                    width="370"
-                    alt="Картонна коробка"
-                  />
+              <a href="/" target="_blank" rel="noopener nofollow" class="link">
+                <img
+                  src="./images/portfolio-page/apps-boxes.jpg"
+                  width="370"
+                  alt="Картонна коробка"
+                />
+                <div class="card-text">
                   <h2 class="card-title">Проєкт Boxes</h2>
                   <p class="card-descr">Додаток</p>
-                </a>
-              </div>
+                </div>
+              </a>
             </li>
             <li class="card-item list">
-              <div class="portfolio-card">
-                <a href="/" target="_blank" rel="noopener nofollow" class="link">
-                  <img
-                    src="./images/portfolio-page/site-inspiration.jpg"
-                    width="370"
-                    alt="зображення на моніторі"
-                  />
+              <a href="/" target="_blank" rel="noopener nofollow" class="link">
+                <img
+                  src="./images/portfolio-page/site-inspiration.jpg"
+                  width="370"
+                  alt="зображення на моніторі"
+                />
+                <div class="card-text">
                   <h2 class="card-title">Inspiration has no Borders</h2>
                   <p class="card-descr">Веб-сайт</p>
-                </a>
-              </div>
+                </div>
+              </a>
             </li>
             <li class="card-item list">
-              <div class="portfolio-card">
-                <a href="/" target="_blank" rel="noopener nofollow" class="link">
-                  <img
-                    src="./images/portfolio-page/design-limited.jpg"
-                    width="370"
-                    alt="глянцевий журнал"
-                  />
+              <a href="/" target="_blank" rel="noopener nofollow" class="link">
+                <img
+                  src="./images/portfolio-page/design-limited.jpg"
+                  width="370"
+                  alt="глянцевий журнал"
+                />
+                <div class="card-text">
                   <h2 class="card-title">Видання Limited Edition</h2>
                   <p class="card-descr">Дизайн</p>
-                </a>
-              </div>
+                </div>
+              </a>
             </li>
             <li class="card-item list">
-              <div class="portfolio-card">
-                <a href="/" target="_blank" rel="noopener nofollow" class="link">
-                  <img
-                    src="./images/portfolio-page/marketing-lab.jpg"
-                    width="370"
-                    alt="паперова бирка"
-                  />
+              <a href="/" target="_blank" rel="noopener nofollow" class="link">
+                <img
+                  src="./images/portfolio-page/marketing-lab.jpg"
+                  width="370"
+                  alt="паперова бирка"
+                />
+                <div class="card-text">
                   <h2 class="card-title">Проєкт LAB</h2>
                   <p class="card-descr">Маркетинг</p>
-                </a>
-              </div>
+                </div>
+              </a>
             </li>
             <li class="card-item list">
-              <div class="portfolio-card">
-                <a href="/" target="_blank" rel="noopener nofollow" class="link">
-                  <img
-                    src="./images/portfolio-page/apps-growing.jpg"
-                    width="370"
-                    alt="людина друкує текст на клавіатурі"
-                  />
+              <a href="/" target="_blank" rel="noopener nofollow" class="link">
+                <img
+                  src="./images/portfolio-page/apps-growing.jpg"
+                  width="370"
+                  alt="людина друкує текст на клавіатурі"
+                />
+                <div class="card-text">
                   <h2 class="card-title">Growing Business</h2>
                   <p class="card-descr">Додаток</p>
-                </a>
-              </div>
+                </div>
+              </a>
             </li>
           </ul>
         </div>
@@ -194,7 +201,7 @@
         >
         <address>
           <ul class="footer-nav-list list">
-            <li class="footer-nav-item">
+            <li>
               <a
                 class="link-address link"
                 href="https://goo.gl/maps/Brkv2MQzdbHGvLkJ7"
@@ -203,10 +210,10 @@
                 >м. Київ, пр-т Лесі Українки, 26</a
               >
             </li>
-            <li class="footer-nav-item">
-              <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <li>
+              <a class="link-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
-            <li class="footer-nav-item">
+            <li>
               <a class="link" href="tel:+380961111111">+380961111111</a>
             </li>
           </ul>
