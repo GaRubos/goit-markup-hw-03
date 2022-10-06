@@ -321,6 +321,10 @@ img {
   margin-bottom: 0;
 }
 
+.footer .footer-nav-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
 .footer .link {
   font-style: normal;
   text-decoration: none;
@@ -332,7 +336,7 @@ img {
   margin-top: 0;
 }
 
-.footer .link-address {
+.address .link-address {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -341,23 +345,11 @@ img {
   color: var(--white-color--);
   text-decoration: none;
   margin-top: 0;
-  margin-bottom: 9px;
-}
-
-.footer .link-mail {
-  margin-bottom: 9px;
 }
 
 .footer-nav-list .link:hover,
 .footer-nav-list .link:focus {
   color: var(--accent-color--);
-}
-
-.footer-nav-item {
-  margin-bottom: 9px;
-}
-.footer-nav-item:last-child {
-  margin-bottom: 0;
 }
 
 /* Portfolio Page  */
@@ -376,7 +368,7 @@ img {
   padding-left: 0px;
 }
 
-.button-list .button-item {
+.button-list .button-item:not(:last-child){
   margin-right: 8px;
 }
 
@@ -429,6 +421,7 @@ img {
   padding: 20px 24px;
   background: #ffffff;
   border: 1px solid #eeeeee;
+  border-top: none;
 }
 
 .card-title {
